@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 2px;
+    width: 100%;
+    background-color: red;
+}
+.nav-logo {
+    width: 15%;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+}
