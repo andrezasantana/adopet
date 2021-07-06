@@ -2,12 +2,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-radius: 2px;
     width: 100%;
-    background-color: red;
+    border-bottom-style: solid;
+    border-bottom-width: 0.6rem;
+    background-color: #7b2cbf;
+    border-bottom-color: #ffd500;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 .nav-logo {
-    width: 15%;
+    width: 10rem;
 }
 .menu {
     list-style: none;
