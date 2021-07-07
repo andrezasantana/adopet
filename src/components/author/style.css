@@ -1,0 +1,23 @@
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.author img {
+    width: 20%;
+    border-radius: 50%;
+}
+.bio {
+    color: #23286bff;
+    max-width: 400px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.bio a {
+    text-decoration: none;
+    padding-right: 4px;
+}
