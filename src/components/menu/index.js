@@ -9,9 +9,9 @@ const Menu = () => {
         <div className="nav">
             <img className="nav-logo" src={Logo} alt="logo" ></img>
             <ul className="menu">
-                <li><Link className="link" to="/">Home</Link></li>
-                <li><Link className="link" to="/pets">Pets</Link></li>
-                <li><Link className="link" to="/about">About</Link></li>
+                <li><Link className="link" to="/">Início</Link></li>
+                <li><Link className="link" to="/pets">Animais</Link></li>
+                <li><Link className="link" to="/about">Sobre</Link></li>
             </ul>
         </div>
     )
