@@ -1,0 +1,37 @@
+.container {
+    margin: 5rem 1rem;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    color: #23286bff;
+}
+.card-item {
+    margin: 2rem;
+    border-radius: 8px;
+    background-color: #d8e2dc;
+}
+.card-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+.card-img {
+    width: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card-details {
+    margin: 0.5rem;
+    color: #1d72d8ff;
+    text-transform: capitalize;
+}
+.button {
+    width: 100%;
+    padding: 0.5rem;
+    border-style: none;
+    border-radius: 8px;
+    background-color:#ffd500;
+}
