@@ -10,9 +10,9 @@ const Author = () => {
                 <h2>Andreza Santana</h2>
                 <p>Sou daquelas que gosta de viver e aproveitar as pequenas coisas da vida, adoro um bom café em uma dia chuvoso. Me chamo Andreza mas para os amigos é Deza.</p>
                 <div>
-                    <a href="https://www.instagram.com/deza.santanna/" target="_blank">Instagram |</a>
-                    <a href="https://www.linkedin.com/in/andreza-santana-7a4009a2/" target="_blank">Linkedin|</a>
-                    <a href="https://github.com/andrezasantana" target="_blank">GitHub</a>
+                    <a href="https://www.instagram.com/deza.santanna/" target="_blank" rel="noreferrer">Instagram |</a>
+                    <a href="https://www.linkedin.com/in/andreza-santana-7a4009a2/" target="_blank" rel="noreferrer">Linkedin|</a>
+                    <a href="https://github.com/andrezasantana" target="_blank" rel="noreferrer">GitHub</a>
                 </div>
             </div>
         </div>
