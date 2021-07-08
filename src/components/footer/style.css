@@ -1,16 +1,23 @@
+body {
+    margin: 0;
+}
+#root {
+    position: relative;
+    display: inline-block;
+    min-height: 100vh;
+}
 .footer {
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    left: 0;
-    bottom: 0;
     background-color: #1d72d8ff;
     border-top-style: solid;
     border-top-width: 0.6rem;
     border-top-color: #ffd500;
+    position: absolute;
+    bottom: 0;
 }
 .logo {
     width: 8rem;
