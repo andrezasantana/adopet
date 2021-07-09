@@ -1,0 +1,36 @@
+.main-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 20%;
+    color: #23286bff;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+.label {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #23286bff;
+    outline: none;
+}
+.input:focus {
+    border-color: yellow;
+}
+.submit {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-style: none;
+    border-radius: 8px;
+    background-color:#ffd500;
+    cursor: pointer;
+}

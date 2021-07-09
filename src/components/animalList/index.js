@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import "./style.css";
 
+import { Link } from 'react-router-dom';
+
 const AnimalList = () => {
     const [pets, setPets] = useState([])
     const [filteredPets, setFilteredPets] = useState([])
@@ -64,7 +66,7 @@ const AnimalList = () => {
                         <h3 className="card-title">{animal.name}</h3>
                         <p className="card-details">Sexo: {animal.sex}</p>
                         <p className="card-details">Idade: {animal.age}</p>
-                        <button className="button">QUERO ADOTAR</button>
+                        <Link className="button" to={"/adopt/" + animal.name}>QUERO ADOTAR</Link>
                     </div>
                 ))}
             </div>
