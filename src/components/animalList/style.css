@@ -29,12 +29,14 @@
     text-transform: capitalize;
 }
 .button {
-    width: 100%;
+    display: flex;
+    justify-content: center;
     padding: 0.5rem;
     border-style: none;
     border-radius: 8px;
     background-color:#ffd500;
     cursor: pointer;
+    text-decoration: none;
 }
 .filters {
     display: flex;
