@@ -10,14 +10,14 @@ const FormAdopt = () => {
 
     const onSubmit = (data) => {
         console.log(data);  
-        alert(`Obrigada por dar um lar para ${name.toUpperCase()} em breve entraremos em contato`)
+        alert(`Obrigada por dar um lar a ${name.toUpperCase()} em breve entraremos em contato.`)
         window.location.href='/'
     }
 
     return (
         <div className="main-form">
             {console.log(errors)}
-            <h1>Uhuuu! Parabéns</h1>
+            <h1>Uhuuu! Parabéns!</h1>
             <p>Para conhecer {name.toUpperCase()} o novo membro da sua família preencha os dados abaixo que iremos entrar em contato.</p>
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
                 <label className="label">Nome:</label>
