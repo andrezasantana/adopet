@@ -1,14 +1,14 @@
 import React from "react";
 import Menu from "../../components/menu";
 import Footer from "../../components/footer";
-import Card from "../../components/card";
+import AnimalList from "../../components/animalList";
 
 
 const Pets = () => {
     return (
         <>
             <Menu />
-            <Card />
+            <AnimalList />
             <Footer />
         </>
     )

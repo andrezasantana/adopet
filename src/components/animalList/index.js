@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import "./style.css";
 
-const Card = () => {
+const AnimalList = () => {
     const [pets, setPets] = useState([])
     const [filteredPets, setFilteredPets] = useState([])
     const [filterName, setFilterName] = useState('')
@@ -72,4 +72,4 @@ const Card = () => {
     )
 }
 
-export default Card
+export default AnimalList
