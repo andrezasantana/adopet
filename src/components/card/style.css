@@ -34,4 +34,30 @@
     border-style: none;
     border-radius: 8px;
     background-color:#ffd500;
+    cursor: pointer;
+}
+.filters {
+    display: flex;
+    min-width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8e2dc;
+    border-radius: 8px;
+}
+.filters h3 {
+    color: #23286bff;
+    padding-left: 1rem;
+}
+.button-filter {
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #23286bff;
+    outline: none;
+}
+.button-filter:focus {
+    border-color: yellow;
 }

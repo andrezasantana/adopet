@@ -4,31 +4,61 @@ import "./style.css";
 
 const Card = () => {
     const [pets, setPets] = useState([])
-    const [search, setSearch] = useState('')
-    const [filtroPets, setFiltroPets] = useState([])
+    const [filteredPets, setFilteredPets] = useState([])
+    const [filterName, setFilterName] = useState('')
+    const [filterAge, setFilterAge] = useState('')
+    const [filterSex, setFilterSex] = useState('')
+    const [filterSpecies, setFilterSpecies] = useState('')
 
     useEffect(() => {
-        const pegaDados = async () => {
+        const getData = async () => {
             const result = await Axios.get('https://my-json-server.typicode.com/andrezasantana/pets/db')
-            const dados = await result.data.pets
-            setPets(dados)
+            const data = await result.data.pets
+            setPets(data)
         }
-        pegaDados()
+        getData()
     }, [])
 
     useEffect(() => {
-        setFiltroPets(
-            pets.filter(animal => {
-                return animal.name.includes(search)
-            })
-        )
-    }, [search, pets])
+        setFilteredPets(pets.filter(animal => {
+            return animal.name.includes(filterName);
+        }).filter(animal => {
+            return (filterAge == '' || animal.age == filterAge);
+        }).filter(animal => {
+            return (filterSex == '' || animal.gender == filterSex);
+        }).filter(animal => {
+            return (filterSpecies == '' || animal.species == filterSpecies);
+        }));
+    }, [filterAge, filterName, filterSex, filterSpecies, pets])
 
     return (
         <div className="container">
-            <input className="search" onChange={e => { setSearch(e.target.value) }} placeholder="Digite um animal" />
+            <div className="filters">
+                <h3>Filtre por:</h3>
+
+                <input className="button-filter" onChange={e => { setFilterName(e.target.value) }} placeholder="Digite um nome" />
+
+                <select className="button-filter" defaultValue="" onChange={e => { setFilterAge(e.target.value) }}>
+                    <option value="">Idade</option>
+                    <option value="adulto">Adulto</option>
+                    <option value="filhote">Filhote</option>
+                </select>
+
+                <select className="button-filter" defaultValue="" onChange={e => { setFilterSex(e.target.value) }}>
+                    <option value="">Sexo</option>
+                    <option value="fêmea">Fêmea</option>
+                    <option value="macho">Macho</option>
+                </select>
+
+                <select className="button-filter" defaultValue="" onChange={e => { setFilterSpecies(e.target.value) }}>
+                    <option value="">Espécie</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                </select>
+            </div>
+
             <div className="card">
-                {filtroPets.map(animal => (
+                {filteredPets.map(animal => (
                     <div className="card-item" key={animal.id}>
                         <img className="card-img" src={animal.image} alt="test" />
                         <h3 className="card-title">{animal.name}</h3>
