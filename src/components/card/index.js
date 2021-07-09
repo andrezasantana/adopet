@@ -25,7 +25,7 @@ const Card = () => {
         }).filter(animal => {
             return (filterAge == '' || animal.age == filterAge);
         }).filter(animal => {
-            return (filterSex == '' || animal.gender == filterSex);
+            return (filterSex == '' || animal.sex == filterSex);
         }).filter(animal => {
             return (filterSpecies == '' || animal.species == filterSpecies);
         }));
@@ -62,7 +62,7 @@ const Card = () => {
                     <div className="card-item" key={animal.id}>
                         <img className="card-img" src={animal.image} alt="test" />
                         <h3 className="card-title">{animal.name}</h3>
-                        <p className="card-details">Sexo: {animal.gender}</p>
+                        <p className="card-details">Sexo: {animal.sex}</p>
                         <p className="card-details">Idade: {animal.age}</p>
                         <button className="button">QUERO ADOTAR</button>
                     </div>
