@@ -21,13 +21,13 @@ const Card = () => {
 
     useEffect(() => {
         setFilteredPets(pets.filter(animal => {
-            return animal.name.includes(filterName);
+            return animal.name.toLowerCase().includes(filterName.toLowerCase());
         }).filter(animal => {
-            return (filterAge == '' || animal.age == filterAge);
+            return (filterAge === '' || animal.age === filterAge);
         }).filter(animal => {
-            return (filterSex == '' || animal.sex == filterSex);
+            return (filterSex === '' || animal.sex === filterSex);
         }).filter(animal => {
-            return (filterSpecies == '' || animal.species == filterSpecies);
+            return (filterSpecies === '' || animal.species === filterSpecies);
         }));
     }, [filterAge, filterName, filterSex, filterSpecies, pets])
 
