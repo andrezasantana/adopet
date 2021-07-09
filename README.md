@@ -1,7 +1,6 @@
 # `AdoPet`😃
 
-AdoPet é um projeto de conclusão do curso de Front-end da {Reprograma}!
-O programa foi criado para aproximar as pessoas que querem adotar um pet e os peludos de quatro patas mais fofos do mundo. Buscamos incentivar a adoção, e desestimular o mercado de venda de animais. Afinal amigo não se compra! 
+AdoPet é um projeto de conclusão do curso de Front-end da Reprograma! Foi criado com o objetivo de aproximar as pessoas que querem adotar um pet e os peludos de quatro patas mais fofos do mundo. Buscando incentivar a adoção, e desestimular o mercado de venda de animais. Afinal amigo não se compra!
 
 
 ---
